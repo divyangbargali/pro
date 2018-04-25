@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>	
+  
+ 
+  
+  .dropdown-menu li a:hover
+   {
+   background-color:cyan;
+   color:black;
+   
+   }
+<!-->  .carousel-inner img
+  {
+	filter:grayscale(90%);
+}
+  <-->
+.col-sm-4 img
+{
+	border:1px solid black;
+	filter:grayscale(90%);
+}
+
+.text-center a:hover
+{
+	opacity:0.5;
+}
+ 
+  .dropdown:hover .dropdown-menu
+{
+	display:block;
+}
+
+.dropdown-menu 
+{
+	background-color:black;
+}
+  
+.dropdown-menu li a
+{
+	background-color:black;
+    color:white;
+	padding:12px 16px;
+}
+   
+ 
+ .hello:hover
+{
+	background-color:cyan;
+	color:black;
+}
+
+	
+ 
+  </style>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Phenomenal-Programmer</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav navbar-right">
+				<li class="hello"><a href="#"><span class="glyphicon glyphicon-user"></span>
+				Sign Up</a></li>
+				<li class="hello"><a href="#"><span class="glyphicon glyphicon-user"></span>
+				Login</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="hello "><a href="collapsiblenavbar.html">Home</a></li>
+				<li class="dropdown hello">
+					<a  href="#">About Us<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="about1.html">About Web designers</a></li>
+						<li><a href="#">About Web developer</a></li>
+						<li><a href="#">About SEO</a></li>
+					</ul>
+				</li>
+				<li class="dropdown hello">
+					<a  href="#">Services<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Services 1</a></li>
+						<li><a href="#">Services 2</a></li>
+						<li><a href="#">Services 3</a></li>
+					</ul>
+				</li>
+				
+				<li class="hello"><a href="#contact">Contact</a></li>
+						
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+</nav>
+
+<div >
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#myCarousel" data-slide-to="1"></li>
+		  <li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" >
+
+			<div class="item active">
+				<img src="b1.jpg"    alt="Los Angeles" style=" width:100%; min-height:300px; ">
+				<div class="carousel-caption">
+				  <h1 style="margin-top:-30%; font-size:80px;">Los Angeles</h1>
+				  <p>LA is always so much fun!</p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="b2.jpg"   alt="Chicago" style="  width:100%;  min-height:300px;">
+				<div class="carousel-caption">
+				  <h3>Chicago</h3>
+				  <p>Thank you, Chicago!</p>
+				</div>
+			</div>
+    
+			<div class="item">
+				<img src="b3.jpg"   alt="New York" style="  width:100%; min-height:300px;">
+				<div class="carousel-caption">
+				  <h3>New York</h3>
+				  <p>We love the Big Apple!</p>
+				</div>
+			</div>
+  
+		</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left" style="color:cyan;"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right" style="color:cyan;"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+	</div>
+</div>
+  
+<div class="container text-center">
+	<h3 style="font-size:40px;">The phenomenal-programmer</h3>
+	<p><em><b>I love programming!</b></em></p>
+	<p><b> I am phenomenal</b></p>
+	<br>
+	<hr style="color:black;">
+	<div class="row">
+		<div class="col-sm-4">
+			<p class="text-center"  style="font-size:30px;"><strong>The</strong></p><br>
+			<a href="#demo" data-toggle="collapse">
+			<img src="g1.jpg" class="img-circle " alt="Random Name" width="300" height="300" >
+			</a>
+			<div id="demo" class="collapse">
+				<p style="font-size:20px; "><strong>programming is like a poetry</strong></p><br>
+				<p style="font-size:20px;">if you can feel it you can do it</p><br>
+				<p><strong>web designer since 2007</strong></p>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<p class="text-center" style="font-size:30px;"><strong>Phenomenal</strong></p><br>
+			<a href="#demo2" data-toggle="collapse">
+			<img src="g2.jpg" class="img-circle " alt="Random Name" width="300" height="300">
+			</a>
+			<div id="demo2" class="collapse">
+				<p style="font-size:20px; "><strong>software is like a sex it is better when it is free</strong></p><br>
+				<p style="font-size:20px;">follow your passion</p><br>
+				<p><strong>web developer since 2010</strong></p>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<p class="text-center"  style="font-size:30px;"><strong>Programmer</strong></p><br>
+			<a href="#demo3" data-toggle="collapse">
+			<img src="g3.jpg" class="img-circle" alt="Random Name" width="300" height="300">
+			</a>
+				<div id="demo3" class="collapse">
+				<p style="font-size:20px; "><strong>A computer is like an ac room it become useless when u open windows</strong></p>
+				<p style="font-size:20px; ">Life is a bitch if it easy u r doing it wrong</p><br>
+				<p><strong>SEO since 2012</strong></p>
+				</div>
+		</div>
+	</div>
+</div>
+
+<br><br><hr style="background-color:black;">
+
+
+
+
+<div class="container" >
+	<h2 class="text-center">We help you to make creative websites</h2>
+	<h3 class="text-center">Web developement batches date and time<ul class="list-group"></h3>
+		<ul>
+			<li class="list-group-item" style="background-color:black; color:white;">HTML,CSS,BOOTSTRAP<span class="badge" style="background-color:black; color:white;"> 4-5pm</span></li>
+			<li class="list-group-item" style="background-color:black; color:white;">JAVASCRIPT<span class="badge" style="background-color:black; color:white;"> 5-6pm</span></li>
+			<li class="list-group-item" style="background-color:black; color:white;">PHP<span class="badge" style="background-color:black; color:white;">6-7pm</span></li>
+		</ul>
+<br><br><br><hr>
+	<h2 class="text-center"><em>We have a branch in Paris,New York and San Francisco</em></h2>
+				
+<br><br><br>
+
+
+
+	<div class="row text-center">
+		<div class="col-sm-4">
+			<div class="thumbnail">
+				<img src="paris.jpg" alt="paris" width="400" height="300">
+				<p><strong>Paris</strong></p>
+				<p>Our Paris Branch</p>
+				
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="thumbnail">
+				<img src="newyork.jpg" alt="newyork" width="400" height="300">
+				<p><strong>New York</strong></p>
+				<p>Our New York Branch</p>
+				
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="thumbnail">
+				<img src="sanfran.jpg" alt="San francisco" width="400" height="300">
+				<p><strong>San Francisco</strong></p>
+				<p> Our San Francisco Branch</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+<hr>
+<br><br>
+
+
+
+
+
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 " >
+			<div class="thumbnail text-center" style="height:310px; border:1px solid black;">
+				<p><span style="font-size:20px; color:cyan;" ><b>PHARMA PLUS SOFTWARE <br>
+						PHARMACY MANAGEMENT</b><br><br></span>
+
+					<span style="font-size:17px">	<b>READY WITH GST FEATURES</span><br>
+						 <span style="font-size:20px">11,999</span><br></b>
+						<b>Hurry Promotional Offer (20% Discount)</b><br><br><br>
+						Pharma Plus is complete pharmacy management software for pharmaceutical dealers & distributors (wholesale & retail chemists) with stock management, expiry calculation & financial accounting etc.
+					
+			</p>
+			</div>
+		</div>
+		<div class="col-sm-4 text-center" >
+			<div class="thumbnail" style="height:310px; border:1px solid black;">
+			<p><span style="font-size:20px; color:cyan;" ><b>WEBSITE DESIGN AND DEVELOPMENT</span><br></br>
+
+					<span style="font-size:17px"><b>MOBILE RESPONSIVE WEBSITE</b><br></span>
+					  <span style="font-size:20px">5,999</span><br></b>
+					<b>Hurry Promotional Offer (20% Discount)</b><br><br><br>
+					Domain Registration, Web Hosting, Personalized design, Home page with slider, 5 to 6 pages, Photo Gallery, Enquiry Form, Facebook and Google+, Responsive Web Design, 1 Year free maintenance
+			</p>
+			</div>
+		</div>
+		<div class="col-sm-4 text-center">
+			<div class="thumbnail" style="height:310px; border:1px solid black;" >
+			<p><span style="font-size:20px; color:cyan;" ><b>INSTITUTE PLUS SOFTWARE<br>
+					INSTITUTE MANAGEMENT</b><br><br></span>
+
+					<span style="font-size:17px">	<b>	READY WITH GST FEATURES</span><br>
+					<span style="font-size:20px"> 11,999</span><br></b>
+					<b>Hurry Promotional Offer (20% Discount)</b><br><br><br>
+					Institute Plus is Complete Institute Management Software to handle daily inquiries and student admission records, fees collection, financial accounting with easy banking etc.
+			</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<br><br><hr>
+
+
+<h2 class="text-center">What our customers say</h2>
+<br>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" style="height:200px;">
+    
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" >
+      <div class="item active">
+        <h4 style="margin-top:60px;">"This company is the best. I am so happy with the result!"<br><span>Jeetank Arora, Comedian, from vishnu puri</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="margin-top:60px;">"One word... WOW!!"<br><span>Shubham Prajapati, MCA, from Aamrapali</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="margin-top:60px;">"Could I... BE any more happy with this company?"<br><span>Rohit kumar, Alien, from Mars</span></h4>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br><br><hr>
+
+
+
+<div class="container" id="contact">
+	<h3 class="text-center">Contact</h3>
+	<p class="text-center"><em>We love our fans!</em></p>
+	
+	<div class="row">
+		<div class="col-md-4">
+			<p>Fan? Drop a Note</p>
+			<p><span class="glyphicon glyphicon-map-maker"></span>Chicago, US</p>
+			<p><span class="glyphicon glyphicon-phone"></span>Phone: +001515151515</p>
+			<p><span class="glyphicon glyphicon-envelope"></span>Email:mail@mail.com</p>
+		</div>
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-sm-6 form-group">
+					<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+				</div>
+				<div class="col-sm-6 form-group">
+					<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+				</div>
+			</div>
+			<textarea class="form-control" id="comments" name="comments" placeholder="comment" rows="5"></textarea>
+			<br>
+			<div class="row">
+				<div class="col-md-12 form-group">
+					<button class="btn pull-right" type="submit">Send</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+
+
+
+<p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.1926519701437!2d79.51632331469582!3d29.217887332190468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09ae108b6c7dd%3A0x27582354fdaf6579!2sMukhani+Chouraha%2C+Lal+danth%2C+Haldwani%2C+Uttarakhand+263139!5e0!3m2!1sen!2sin!4v1513173859742" width="100%" height="300px;"  style="border:0px" allowfullscreen></iframe>
+</p>
+
+</body>
+</html>
+	
+
+					

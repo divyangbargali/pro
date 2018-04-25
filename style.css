@@ -1,0 +1,42 @@
+
+
+.pimg1, .pimg2, .pimg3{
+	
+	opacity: 0.70;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+
+.pimg1{ 
+	background-image: url('i1.jpeg');
+
+	min-height: 580px;
+	}
+
+.pimg2{
+	background-image: url('i2.jpeg');
+	
+	min-height: 400px;
+}
+
+.pimg3{
+	background-image: url('i3.jpeg');
+	
+	min-height: 400px;
+}
+
+
+.decoration{
+	 margin-left:42%;
+	 font-size:25px;
+	 color:cyan; 
+	 margin-top:20%;
+	 font-weight:bold;
+}
+
+
+
